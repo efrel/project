@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {AdminComponent} from './layout/admin/admin.component';
 import {AuthComponent} from './layout/auth/auth.component';
-import {EmailModule} from './theme/email/email.module';
 
 const routes: Routes = [
   {
@@ -19,7 +18,7 @@ const routes: Routes = [
         loadChildren: './layout/admin/admin.module#AdminModule'
       }
     ]
-  },
+  },/*
   {
     path: '',
     component: AuthComponent,
@@ -49,7 +48,7 @@ const routes: Routes = [
         loadChildren: './theme/landing/landing.module#LandingModule'
       }
     ]
-  },
+  },*/
   {
     path: '**',
     redirectTo: 'admin/inicio'
