@@ -9,7 +9,7 @@ export class InicioComponent implements OnInit {
   collection = [];
 
   constructor() { 
-    for(let i = 1; i <= 100; i++){
+    for(let i = 1; i <= 10654654; i++){
       this.collection.push(`Angular ${i}.0`);
     }
   }

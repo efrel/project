@@ -136,9 +136,9 @@
             </ul>
 
             <ul>
-              <li *ngFor="let item of collection | paginate: { itemsPerPage:5, currentPage: p }">{{item}}</li>
+              <li *ngFor="let item of collection | paginate: { itemsPerPage:15, currentPage: p, totalItems: total }">{{item}}</li>
             </ul>
-            <pagination-controls (pageChange)="p =$event"></pagination-controls>
+            <pagination-controls class="my-pagination" (pageChange)="p =$event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
 
           </div>
         </div>
